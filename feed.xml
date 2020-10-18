@@ -1,2 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-18T14:44:57+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">Welcome to Ice Cubes!</title><link href="http://localhost:4000/posts/welcome/intro/update/2020/10/18/welcome-to-ice-cubes.html" rel="alternate" type="text/html" title="Welcome to Ice Cubes!" /><published>2020-10-18T13:54:49+02:00</published><updated>2020-10-18T13:54:49+02:00</updated><id>http://localhost:4000/posts/welcome/intro/update/2020/10/18/welcome-to-ice-cubes</id><content type="html" xml:base="http://localhost:4000/posts/welcome/intro/update/2020/10/18/welcome-to-ice-cubes.html">&lt;p&gt;Hej!
-I am happy you are here. Soon there will be more to see.&lt;/p&gt;</content><author><name></name></author><summary type="html">Hej! I am happy you are here. Soon there will be more to see.</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-18T19:13:59+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">Welcome to Ice Cubes!</title><link href="http://localhost:4000/posts/welcome/intro/update/2020/10/18/welcome-to-ice-cubes.html" rel="alternate" type="text/html" title="Welcome to Ice Cubes!" /><published>2020-10-18T13:54:49+02:00</published><updated>2020-10-18T13:54:49+02:00</updated><id>http://localhost:4000/posts/welcome/intro/update/2020/10/18/welcome-to-ice-cubes</id><content type="html" xml:base="http://localhost:4000/posts/welcome/intro/update/2020/10/18/welcome-to-ice-cubes.html">&lt;h2&gt;Hej! And welcome on Ice Cubes!&lt;/h2&gt;
+&lt;p&gt;
+    My name is Christine, a software developer who besides coding in Python
+    likes to make puns on her last name (Winter).
+   &lt;br&gt;
+    As an ambivert I also enjoy organising tech events like
+    &lt;a href=&quot;https://www.meetup.com/PyLadiesStockholm/&quot;&gt;PyLadies Sthlm&lt;/a&gt;
+    and &lt;a href=&quot;https://www.pycon.se&quot;&gt;PyCon Sweden&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+    I care about the people I meet and work with. Therefore I always want to
+    create an atmosphere where everybody feels welcomed and connected.
+    In that way we can have interesting discussions and pick up exciting
+    challenges together. And most of all, we will celebrate our successes
+    as well as learn new skills on the way and grow as people.
+&lt;/p&gt;
+&lt;p&gt;
+    With this page I want to inspire you who might be interested in tech and
+    just leak a bit of tools to get started. I hope you find some inspiring
+    project ideas to learn tech in a fun way.
+&lt;/p&gt;
+&lt;p&gt;
+    Again a very warm welcome and if you have any topic that you want me
+    to cover, feel free to reach out via the contact form or email.
+&lt;/p&gt;
+&lt;p&gt;
+    All the best,
+    &lt;br&gt;
+    Christine
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Hej! And welcome on Ice Cubes! My name is Christine, a software developer who besides coding in Python likes to make puns on her last name (Winter). As an ambivert I also enjoy organising tech events like PyLadies Sthlm and PyCon Sweden. I care about the people I meet and work with. Therefore I always want to create an atmosphere where everybody feels welcomed and connected. In that way we can have interesting discussions and pick up exciting challenges together. And most of all, we will celebrate our successes as well as learn new skills on the way and grow as people. With this page I want to inspire you who might be interested in tech and just leak a bit of tools to get started. I hope you find some inspiring project ideas to learn tech in a fun way. Again a very warm welcome and if you have any topic that you want me to cover, feel free to reach out via the contact form or email. All the best, Christine</summary></entry></feed>
