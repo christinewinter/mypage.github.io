@@ -1,4 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-20T11:24:31+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">Welcome to Ice Cubes!</title><link href="http://localhost:4000/posts/welcome/intro/update/2020/10/18/welcome-to-ice-cubes.html" rel="alternate" type="text/html" title="Welcome to Ice Cubes!" /><published>2020-10-18T13:54:49+02:00</published><updated>2020-10-18T13:54:49+02:00</updated><id>http://localhost:4000/posts/welcome/intro/update/2020/10/18/welcome-to-ice-cubes</id><content type="html" xml:base="http://localhost:4000/posts/welcome/intro/update/2020/10/18/welcome-to-ice-cubes.html">&lt;h2&gt;Hej! And welcome on Ice Cubes!&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-20T21:07:24+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">An Ice Cube about Slow Multitasking</title><link href="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html" rel="alternate" type="text/html" title="An Ice Cube about Slow Multitasking" /><published>2020-10-20T19:00:00+02:00</published><updated>2020-10-20T19:00:00+02:00</updated><id>http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html">&lt;h2&gt;An Ice Cube about Slow Multitasking&lt;/h2&gt;
+&lt;p&gt;
+    Recently I discovered a
+    &lt;a href=&quot;https://www.ted.com/talks/tim_harford_a_powerful_way_to_unleash_your_natural_creativity/transcript&quot;&gt;
+        TED talk
+    &lt;/a&gt;
+    by Tim Harford that inspired me. He explains the concept of slow
+    multitasking as a creative tool. In a nutshell it is working on different projects over a long period
+    of time. The projects could go on for weeks, months, years depending on how much time they need to be
+    finished. Some never finish and that is also okay.
+&lt;/p&gt;
+&lt;p&gt;
+    I love this concept! My whole life I was struggling to limit my interests because I though you can only be
+    good at something if I focus on it fully. The way ordinary careers are structured by finishing school,
+    selecting a profession and pursuing one path until retirement always freaked me out. I wanted to see life in a
+    continuous exploration. Throughout my studies and later my work days I had a lot of ideas and interests
+    popping up in my head. I thought I could become a piano player, a painter, a photographer, a surfer, a writer
+    or a machine learning pioneer. I wanted to be everything but I stopped exploring the sideways because I thought
+    these activities would be misleading and stealing time from my actual tasks that I have to do to become a better
+    developer.
+&lt;/p&gt;
+&lt;p&gt;
+    Life is not limited to one career path and a job title. With the concept of slow multitasking I no longer feel
+    like have to limit myself and instead I can can allocate time and energy for projects I am interested in.
+    My best example is this blog. Because for being creative it is not important
+    if you think about doing one certain thing the rest of your life. Instead it is important that you start doing
+    something in the first place and let your passion drive you on the way.
+&lt;/p&gt;
+&lt;p&gt;
+    Think about it. What will your passion project be for the next weeks? And why don't just start today?
+&lt;/p&gt;
+&lt;p&gt;
+    All the best,
+    &lt;br&gt;
+    Christine
+&lt;/p&gt;</content><author><name></name></author><summary type="html">An Ice Cube about Slow Multitasking Recently I discovered a TED talk by Tim Harford that inspired me. He explains the concept of slow multitasking as a creative tool. In a nutshell it is working on different projects over a long period of time. The projects could go on for weeks, months, years depending on how much time they need to be finished. Some never finish and that is also okay. I love this concept! My whole life I was struggling to limit my interests because I though you can only be good at something if I focus on it fully. The way ordinary careers are structured by finishing school, selecting a profession and pursuing one path until retirement always freaked me out. I wanted to see life in a continuous exploration. Throughout my studies and later my work days I had a lot of ideas and interests popping up in my head. I thought I could become a piano player, a painter, a photographer, a surfer, a writer or a machine learning pioneer. I wanted to be everything but I stopped exploring the sideways because I thought these activities would be misleading and stealing time from my actual tasks that I have to do to become a better developer. Life is not limited to one career path and a job title. With the concept of slow multitasking I no longer feel like have to limit myself and instead I can can allocate time and energy for projects I am interested in. My best example is this blog. Because for being creative it is not important if you think about doing one certain thing the rest of your life. Instead it is important that you start doing something in the first place and let your passion drive you on the way. Think about it. What will your passion project be for the next weeks? And why don't just start today? All the best, Christine</summary></entry><entry><title type="html">An Ice Cube about Grit</title><link href="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-grit.html" rel="alternate" type="text/html" title="An Ice Cube about Grit" /><published>2020-10-20T18:00:00+02:00</published><updated>2020-10-20T18:00:00+02:00</updated><id>http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-grit</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-grit.html">&lt;h2&gt;An Ice Cube about Grit&lt;/h2&gt;
+&lt;p&gt;
+    Programming is a challenge for the mind. Not only because of the complexity of systems or features we are building,
+    but also because of the setup. Most people program alone and that not always by choice. Many teams
+    I have seen split up problems into smaller tasks that get implemented by one person each. The idea seems nice.
+    We have a lot of work and by the divide and conquer approach we work faster towards the common goal.
+&lt;/p&gt;
+&lt;p&gt;
+    The drawback of this setup is, that this follows a lot of alone time with focus on getting thoughts into code.
+    With code comes bugs and with more bugs and more code comes more and more frustration.
+    And frustration was never known to be a constructive driver for qualitative programming but rather nourishes
+    self-doubt. Like a tiny voice telling us that we are an imposter, that we are not as smart as our peers and
+    should have become travel bloggers instead of a developers.
+&lt;/p&gt;
+&lt;p&gt;
+    Heads up, many of us have been there too. And will end up there again.
+&lt;/p&gt;
+&lt;p&gt;
+    But what to do?
+    How do we stay on the problem anyway, find the cause of bugs or continue
+    coding until everything work as we want it and not just throw the towel into the ring?
+&lt;/p&gt;
+&lt;p&gt;
+    Recently I stumbled over Angela Duckworth’s TED talk about GRIT. She studies the reason that makes people successful and why.
+    Are there common patterns that apply to those people?
+    What do they do differently than others?
+&lt;/p&gt;
+&lt;p&gt;
+    She found out that there is a relation of talent, effort and skill.
+    With an initial talent we need less effort to learn a certain skill, but if we put a lot of effort into
+    learning, talent can be outperformed. The motivation to go the extra mile and put effort into improvement
+    she describes as grit, the combination of passion and perseverance, the will to push forward to become better.
+&lt;/p&gt;
+&lt;p&gt;
+    Isn't that great news?
+&lt;/p&gt;
+&lt;p&gt;
+    I found her description of grit inspiring, because it destroys the finality of learning and its dependency
+    on talent. The brain is plastic. It has the ability to adapt and change. So, if you have a vision of your
+    goal and spend the energy to progress and improve you will go further and further and improve your skill.
+    &lt;br&gt;
+    Programming is a skill like any other. With enough time and a curious mind, you will master it and fix the bugs.
+&lt;/p&gt;
+&lt;p&gt;
+    Keep that in mind when frustration is building up again and you feel like giving up.
+    It's yet another step on the way to the solution and you will learn a lot from this experience.
+&lt;/p&gt;
+&lt;p&gt;
+    Check out Angela Duckworth's
+    &lt;a href=&quot;https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance?nolanguage=en%EF%BB%BF&quot;&gt;
+    TED Talk
+    &lt;/a&gt;
+    or the
+    &lt;a href=&quot;https://www.econtalk.org/angela-duckworth-on-grit/&quot;&gt;
+        conversation on EconTalks with Ross Roberts.
+    &lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    All the best,
+    &lt;br&gt;
+    Christine
+&lt;/p&gt;</content><author><name></name></author><summary type="html">An Ice Cube about Grit Programming is a challenge for the mind. Not only because of the complexity of systems or features we are building, but also because of the setup. Most people program alone and that not always by choice. Many teams I have seen split up problems into smaller tasks that get implemented by one person each. The idea seems nice. We have a lot of work and by the divide and conquer approach we work faster towards the common goal. The drawback of this setup is, that this follows a lot of alone time with focus on getting thoughts into code. With code comes bugs and with more bugs and more code comes more and more frustration. And frustration was never known to be a constructive driver for qualitative programming but rather nourishes self-doubt. Like a tiny voice telling us that we are an imposter, that we are not as smart as our peers and should have become travel bloggers instead of a developers. Heads up, many of us have been there too. And will end up there again. But what to do? How do we stay on the problem anyway, find the cause of bugs or continue coding until everything work as we want it and not just throw the towel into the ring? Recently I stumbled over Angela Duckworth’s TED talk about GRIT. She studies the reason that makes people successful and why. Are there common patterns that apply to those people? What do they do differently than others? She found out that there is a relation of talent, effort and skill. With an initial talent we need less effort to learn a certain skill, but if we put a lot of effort into learning, talent can be outperformed. The motivation to go the extra mile and put effort into improvement she describes as grit, the combination of passion and perseverance, the will to push forward to become better. Isn't that great news? I found her description of grit inspiring, because it destroys the finality of learning and its dependency on talent. The brain is plastic. It has the ability to adapt and change. So, if you have a vision of your goal and spend the energy to progress and improve you will go further and further and improve your skill. Programming is a skill like any other. With enough time and a curious mind, you will master it and fix the bugs. Keep that in mind when frustration is building up again and you feel like giving up. It's yet another step on the way to the solution and you will learn a lot from this experience. Check out Angela Duckworth's TED Talk or the conversation on EconTalks with Ross Roberts. All the best, Christine</summary></entry><entry><title type="html">Welcome to Ice Cubes!</title><link href="http://localhost:4000/posts/welcome/intro/2020/10/18/welcome-to-ice-cubes.html" rel="alternate" type="text/html" title="Welcome to Ice Cubes!" /><published>2020-10-18T13:54:49+02:00</published><updated>2020-10-18T13:54:49+02:00</updated><id>http://localhost:4000/posts/welcome/intro/2020/10/18/welcome-to-ice-cubes</id><content type="html" xml:base="http://localhost:4000/posts/welcome/intro/2020/10/18/welcome-to-ice-cubes.html">&lt;h2&gt;Hej! And welcome on Ice Cubes!&lt;/h2&gt;
 &lt;p&gt;
     My name is Christine, a software developer who besides coding in Python
     likes to make puns on her last name (Winter).
