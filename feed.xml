@@ -1,4 +1,233 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-20T21:07:24+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">An Ice Cube about Slow Multitasking</title><link href="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html" rel="alternate" type="text/html" title="An Ice Cube about Slow Multitasking" /><published>2020-10-20T19:00:00+02:00</published><updated>2020-10-20T19:00:00+02:00</updated><id>http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html">&lt;h2&gt;An Ice Cube about Slow Multitasking&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-15T17:06:20+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">How did PyCon Sweden go online?</title><link href="http://localhost:4000/posts/inspiration/pyconse/2020/11/15/organize-conference.html" rel="alternate" type="text/html" title="How did PyCon Sweden go online?" /><published>2020-11-15T14:00:00+01:00</published><updated>2020-11-15T14:00:00+01:00</updated><id>http://localhost:4000/posts/inspiration/pyconse/2020/11/15/organize-conference</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/pyconse/2020/11/15/organize-conference.html">&lt;h2&gt;Conferences in Times of Corona&lt;/h2&gt;
+&lt;p&gt;
+    The disruption in the event industry this year did also hit our organizing team at &lt;a href=&quot;www.pycon.se&quot; target=&quot;_blank&quot;&gt;PyCon Sweden 2020&lt;/a&gt; .
+    Last year we arranged our biggest conference until then. A two day conference with 3 keynotes, 17 talks,
+    4 workshops and 2 panel discussions at a venue in the heart of Stockholm. For 2020 we had similar plans
+    and then in March everything changed. Since the conference is usually planned for the fall, we had some
+    buffer to decide if we even want to consider an on-site conference. We quickly decided against it and to
+    go fully online instead. This didn't reduce the planning and we had new points to consider opening our registration
+    up to the world.&lt;br&gt;
+    With a lot of energy and will we extended
+    &lt;a href=&quot;www.pycon.se&quot; target=&quot;_blank&quot;&gt;PyCon Sweden 2020&lt;/a&gt; and arranged a 2 day conference with multiple tracks,
+    4 keynotes, 35 talks, 4 workshops and 2 panel discussions!
+&lt;/p&gt;
+&lt;p&gt;
+    Here is a checklist of things we had to do to arrange a conference of this format.
+    One can invest more time in many of those points, like extended marketing, a remarkable state of the art webpage,
+    intense participant &amp; sponsor engagement and high entertainment in general.&lt;br&gt;
+    This checklist is not fully complete. Still it should allow you to arrange a conference with the main points covered.
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt; 4 - 5 months before the conference:&lt;/b&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;team&quot;&gt;
+    &lt;label for=&quot;team&quot;&gt; Gather the team and set up regular meetings&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;notes&quot;&gt;
+    &lt;label for=&quot;notes&quot;&gt; Take notes during meetings, for example like
+        &lt;a href=&quot;https://github.com/python-sverige/protokoll/blob/master/styrelsemote/boardmeeting-YYYY-MM-DD-template.md&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt; &lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;date&quot;&gt;
+    &lt;label for=&quot;date&quot;&gt; Decide a date&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;size&quot;
+    &lt;label for=&quot;size&quot;&gt; Decide on the size (multiple tracks, 2 days)&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;platform&quot;&gt;
+    &lt;label for=&quot;platform&quot;&gt; Test and decide on a streaming platform&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;keynotes&quot;&gt;
+    &lt;label for=&quot;keynotes&quot;&gt; Invite Keynote speakers&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;webpage&quot;&gt;
+    &lt;label for=&quot;webpage&quot;&gt; Setup a web page&lt;/label&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt; 2 - 3 months before the conference:&lt;/b&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;cfpopen&quot;&gt;
+    &lt;label for=&quot;cfpopen&quot;&gt; Open call for proposals&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;social&quot;&gt;
+    &lt;label for=&quot;social&quot;&gt; Social media coverage, email ads&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;publish&quot;&gt;
+    &lt;label for=&quot;publish&quot;&gt; Publish on social media reminders&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;sponsors&quot;&gt;
+    &lt;label for=&quot;sponsors&quot;&gt; Contact sponsors, sync expectations&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;keynote-announce&quot;&gt;
+    &lt;label for=&quot;keynote-announce&quot;&gt; Keynote announcement&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;cfpclose&quot;&gt;
+    &lt;label for=&quot;cfpclose&quot;&gt; Close CFP and decide on talks/workshops&lt;/label&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt; 1 month before the conference:&lt;/b&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;team2&quot;&gt;
+    &lt;label for=&quot;team2&quot;&gt; Increase meeting frequency&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;registrationopen&quot;&gt;
+    &lt;label for=&quot;registrationopen&quot;&gt; Open registration&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;schedule&quot;&gt;
+    &lt;label for=&quot;schedule&quot;&gt; Create schedule &amp; sync with speakers&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;talksetup&quot;&gt;
+    &lt;label for=&quot;talksetup&quot;&gt; Set up broadcasts, background, links&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;webschedule&quot;&gt;
+    &lt;label for=&quot;webschedule&quot;&gt; Publish schedule&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;engage&quot;&gt;
+    &lt;label for=&quot;engage&quot;&gt; Set up participant engagement (give away, Slack)&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;publish4&quot;&gt;
+    &lt;label for=&quot;publish4&quot;&gt; Publish on social media reminders&lt;/label&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt; 2 weeks before the conference:&lt;/b&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;onboarding&quot;&gt;
+    &lt;label for=&quot;onboarding&quot;&gt; Volunteer On-boarding&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;calendar&quot;&gt;
+    &lt;label for=&quot;calendar&quot;&gt; Calendar reminders during conference in Slack&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;rehearsals&quot;&gt;
+    &lt;label for=&quot;rehearsals&quot;&gt; Speakers Rehearsals&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;publish2&quot;&gt;
+    &lt;label for=&quot;publish2&quot;&gt; Publish on social media reminders&lt;/label&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt; 1 week before the conference:&lt;/b&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;moderation&quot;&gt;
+    &lt;label for=&quot;moderation&quot;&gt; Prepare opening, closing and moderation&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;registrationclose&quot;&gt;
+    &lt;label for=&quot;registrationclose&quot;&gt; Close Registration&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;prepare&quot;&gt;
+    &lt;label for=&quot;prepare&quot;&gt; Prepare social media coverage during the conference&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;publish3&quot;&gt;
+    &lt;label for=&quot;publish3&quot;&gt; Publish on social media reminders&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;communication&quot;&gt;
+    &lt;label for=&quot;communication&quot;&gt; Clearify team communication and responsibilities&lt;/label&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt; Conference day:&lt;/b&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;golive&quot;&gt;
+    &lt;label for=&quot;golive&quot;&gt; Go live&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;feedbackask&quot;&gt;
+    &lt;label for=&quot;feedbackask&quot;&gt; Ask for feedback&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;debrief&quot;&gt;
+    &lt;label for=&quot;debrief&quot;&gt; Debrief and celebrate&lt;/label&gt;&lt;br&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt; 1 week after the conference:&lt;/b&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;feedback&quot;&gt;
+    &lt;label for=&quot;feedback&quot;&gt; Analyse feedback&lt;/label&gt;&lt;br&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;retrospect&quot;&gt;
+    &lt;label for=&quot;retrospect&quot;&gt; Retrospect and lessons learned&lt;/label&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    Of course there are many more things that one could do during preparation time or the conference iteself .
+    And if there is not a lack of anything it is ideas.
+    However keep in mind, that the time and energy you can spend on an event like this is
+    highly dependent on the amount and availability of voluntarily work.&lt;br&gt;
+    Since we want to keep our heads cool during the conference itself it is wise to prioritise and strike certain
+    points out in order to give others enough attention. If things go terribly wrong and we are already at maximum
+    capacity it could mean a total meltdown for some of us and would destroy our team dynamic drastically.
+    &lt;br&gt;
+    At PyCon Sweden we were incredibly lucky that we found committed volunteers that took full ownership to ensure a
+    great experience both for the speakers and the audience. And I am thankful for each single contribution!
+    &lt;br&gt;
+    There are always some hick-ups here and there, especially with technic involved it usually doesn't get easier.
+    A muted microphone, multiple posts with the same content, loss of connection up to a surrendering computer.&lt;br&gt;
+    But honestly isn't exactly that the delightful and exciting part of a live conference?
+&lt;/p&gt;
+&lt;p&gt;
+    I hope you found the checklist usable and wish you good luck for your online event or conference!
+&lt;/p&gt;
+&lt;p&gt;
+    All the best, &lt;br&gt;
+    Christine
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Conferences in Times of Corona The disruption in the event industry this year did also hit our organizing team at PyCon Sweden 2020 . Last year we arranged our biggest conference until then. A two day conference with 3 keynotes, 17 talks, 4 workshops and 2 panel discussions at a venue in the heart of Stockholm. For 2020 we had similar plans and then in March everything changed. Since the conference is usually planned for the fall, we had some buffer to decide if we even want to consider an on-site conference. We quickly decided against it and to go fully online instead. This didn't reduce the planning and we had new points to consider opening our registration up to the world. With a lot of energy and will we extended PyCon Sweden 2020 and arranged a 2 day conference with multiple tracks, 4 keynotes, 35 talks, 4 workshops and 2 panel discussions! Here is a checklist of things we had to do to arrange a conference of this format. One can invest more time in many of those points, like extended marketing, a remarkable state of the art webpage, intense participant &amp; sponsor engagement and high entertainment in general. This checklist is not fully complete. Still it should allow you to arrange a conference with the main points covered. 4 - 5 months before the conference: Gather the team and set up regular meetings Take notes during meetings, for example like this Decide a date Decide on the size (multiple tracks, 2 days) Test and decide on a streaming platform Invite Keynote speakers Setup a web page 2 - 3 months before the conference: Open call for proposals Social media coverage, email ads Publish on social media reminders Contact sponsors, sync expectations Keynote announcement Close CFP and decide on talks/workshops 1 month before the conference: Increase meeting frequency Open registration Create schedule &amp; sync with speakers Set up broadcasts, background, links Publish schedule Set up participant engagement (give away, Slack) Publish on social media reminders 2 weeks before the conference: Volunteer On-boarding Calendar reminders during conference in Slack Speakers Rehearsals Publish on social media reminders 1 week before the conference: Prepare opening, closing and moderation Close Registration Prepare social media coverage during the conference Publish on social media reminders Clearify team communication and responsibilities Conference day: Go live Ask for feedback Debrief and celebrate</summary></entry><entry><title type="html">More Talking, More Doing!</title><link href="http://localhost:4000/posts/meetup/talk/2020/11/01/more-talking.html" rel="alternate" type="text/html" title="More Talking, More Doing!" /><published>2020-11-01T17:21:49+01:00</published><updated>2020-11-01T17:21:49+01:00</updated><id>http://localhost:4000/posts/meetup/talk/2020/11/01/more-talking</id><content type="html" xml:base="http://localhost:4000/posts/meetup/talk/2020/11/01/more-talking.html">&lt;h2&gt;Talk first, do more.&lt;/h2&gt;
+&lt;p&gt;
+    In spring in 2019, I hold my first public presentation at PyLadies
+    Sthlm that became a rolling snowball for the rest of 2019.
+    &lt;br&gt;
+    After the event the meetup organizer asked me, if I would be interested
+    in organising future events of PyLadies Sthlm. That sounded fun and
+    like a unique chance to meet new people and learn about different
+    topics from the Python world. I had no idea how to organize a
+    meetup, but a rough plan and some input from other PyLadies.
+    &lt;br&gt;
+    We needed one or two speakers, a place, a time and a number of
+    participants. That was easy to fix, my colleague + one PyLady
+    organizer would give a talk, they had time the same day in August,
+    I got the rooms and food sponsored from my workplace and 30 people
+    could join.
+    &lt;br&gt;
+    Perfect! All set, people were happy with the event and
+    I as well. All in all a great success!
+&lt;/p&gt;
+
+&lt;h2&gt;Level up!&lt;/h2&gt;
+&lt;p&gt;
+    In the week after that event the chair woman of PyCon Sweden
+    reached out to me for a collaboration of PyLadies Sthlm and PyCon Sweden.
+    PyCon Sweden arranges the annual Python conference
+    in Sweden, usually in Stockholm. Wow, that came quite unexpected. I just
+    started to understand how to arrange a two-hour meetup, but arranging
+    a two-day conference was a completely different league. The team had
+    already prepared a lot and established a structured
+    way to get things done.
+    &lt;br&gt;
+    My responsibilities were arranging two panel discussions,
+    interview our keynotes and update the social media channels during the conference.
+    I never done any of these things before... Especially during the panel
+    I had to face my biggest fear, be spontaneous. I like being prepared and
+    thanks to the internet and Wiki-How I got a lot info and confidence on the way.
+    In the end it became a great experience. &lt;br&gt;
+    This year I am in the organising team again and responsible of keynotes, moderation of their talks and
+    communication via social media, which is an area I explore for some time already.
+&lt;/p&gt;
+
+&lt;h2&gt;What you can learn from organizing events?&lt;/h2&gt;
+
+&lt;h3&gt;Expertise&lt;/h3&gt;
+&lt;p&gt;
+    This is by far the most obvious point, still by dedicating your time to prepare a presentation of a topic
+    you take ownership of your own learning. Spending time to understand and being able to formulate a concept
+    in you own words is a great way of learning. If you are not an expert in a certain area yet, it is a good idea to
+    start gathering material for a beginners course and extend the content as your own knowledge grows. Holding a presentation
+    doesn't mean that you have to be able to answer EVERY question you get from the audience.
+    It is completely fine to say, sorry I am not sure, I will come back to you about. Then look it up and again, you learned
+    something new.
+    &lt;br&gt;
+    If you have nothing that you want to present yourself, you can still arrange an event and see if there are
+    other people that want to present their topic. Support them as much as you can and ask them questions and I bet they
+    will be happy to explain you more details.
+&lt;/p&gt;
+
+&lt;h3&gt;Personality boost&lt;/h3&gt;
+&lt;p&gt;
+    Being the organizer definitely helps to build self-confidence by caring
+    responsibility. Responsibility is scary, but it's that challenge that
+    can enable growth. You have to take decisions and actions to ensure
+    that your speakers and hosts get the best support to make the event
+    a success. You also have to answer a couple of questions, where you have to take decisions yourself.
+&lt;/p&gt;
+
+&lt;h3&gt;Relationships &amp; Network&lt;/h3&gt;
+&lt;p&gt;
+    You can build great relations, with speakers, hosts, attendees and
+    sponsors.
+&lt;/p&gt;
+&lt;p&gt;
+    The hardest part for me at meetups and conferences at the beginning was to start a
+    conversation with random strangers. If you are an organizer people come
+    to you instead to say &quot;Hi&quot; and share ideas. Especially at PyCon Sweden where
+    the organizers were wearing a pink shirt to stick out of the crowd.
+    I have to say that over time I even started to enjoy mingling!
+&lt;/p&gt;
+&lt;p&gt;
+    I can really recommend everybody to get active in your local
+    community. Go to meetups and conferences and support the people
+    daring to step on stage. Study how they hold presentations and
+    prepare one yourself for a local meetup of group that you trust.
+&lt;/p&gt;
+&lt;p&gt;
+    There is so much we can learn from each other, that is not possible
+    to acquire from online courses or programming only. The interaction
+    with people face to face gives the opportunity to ask more questions
+    and understand peoples thoughts, experiences and opinions in a much
+    more engaging way. And who knows maybe you make some friends too...
+&lt;/p&gt;
+&lt;p&gt;
+    All the best,
+    &lt;br&gt;
+    Christine
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Talk first, do more. In spring in 2019, I hold my first public presentation at PyLadies Sthlm that became a rolling snowball for the rest of 2019. After the event the meetup organizer asked me, if I would be interested in organising future events of PyLadies Sthlm. That sounded fun and like a unique chance to meet new people and learn about different topics from the Python world. I had no idea how to organize a meetup, but a rough plan and some input from other PyLadies. We needed one or two speakers, a place, a time and a number of participants. That was easy to fix, my colleague + one PyLady organizer would give a talk, they had time the same day in August, I got the rooms and food sponsored from my workplace and 30 people could join. Perfect! All set, people were happy with the event and I as well. All in all a great success!</summary></entry><entry><title type="html">An Ice Cube about Slow Multitasking</title><link href="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html" rel="alternate" type="text/html" title="An Ice Cube about Slow Multitasking" /><published>2020-10-20T19:00:00+02:00</published><updated>2020-10-20T19:00:00+02:00</updated><id>http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html">&lt;h2&gt;An Ice Cube about Slow Multitasking&lt;/h2&gt;
 &lt;p&gt;
     Recently I discovered a
     &lt;a href=&quot;https://www.ted.com/talks/tim_harford_a_powerful_way_to_unleash_your_natural_creativity/transcript&quot;&gt;
