@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-15T17:38:45+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">How did PyCon Sweden go online?</title><link href="http://localhost:4000/posts/inspiration/pyconse/2020/11/15/organize-conference.html" rel="alternate" type="text/html" title="How did PyCon Sweden go online?" /><published>2020-11-15T14:00:00+01:00</published><updated>2020-11-15T14:00:00+01:00</updated><id>http://localhost:4000/posts/inspiration/pyconse/2020/11/15/organize-conference</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/pyconse/2020/11/15/organize-conference.html">&lt;h2&gt;Conferences in Times of Corona&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-19T21:07:33+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">How did PyCon Sweden go online?</title><link href="http://localhost:4000/posts/inspiration/pyconse/2020/11/15/organize-conference.html" rel="alternate" type="text/html" title="How did PyCon Sweden go online?" /><published>2020-11-15T14:00:00+01:00</published><updated>2020-11-15T14:00:00+01:00</updated><id>http://localhost:4000/posts/inspiration/pyconse/2020/11/15/organize-conference</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/pyconse/2020/11/15/organize-conference.html">&lt;h2&gt;Conferences in Times of Corona&lt;/h2&gt;
 &lt;p&gt;
     The disruption in the event industry this year did also hit our organizing team at &lt;a href=&quot;www.pycon.se&quot; target=&quot;_blank&quot;&gt;PyCon Sweden 2020&lt;/a&gt; .
     Last year we arranged our biggest conference until then. A two day conference with 3 keynotes, 17 talks,
@@ -136,104 +136,55 @@
 &lt;p&gt;
     All the best, &lt;br&gt;
     Christine
-&lt;/p&gt;</content><author><name></name></author><summary type="html">Conferences in Times of Corona The disruption in the event industry this year did also hit our organizing team at PyCon Sweden 2020 . Last year we arranged our biggest conference until then. A two day conference with 3 keynotes, 17 talks, 4 workshops and 2 panel discussions at a venue in the heart of Stockholm. For 2020 we had similar plans and then in March everything changed. Since the conference is usually planned for the fall, we had some buffer to decide if we even want to consider an on-site conference. We quickly decided against it and to go fully online instead. This didn't reduce the planning and we had new points to consider opening our registration up to the world. With a lot of energy and will we extended PyCon Sweden 2020 and arranged a 2 day conference with multiple tracks, 4 keynotes, 35 talks, 4 workshops and 2 panel discussions! Here is a checklist of things we had to do to arrange a conference of this format. One can invest more time in many of those points, like extended marketing, a remarkable state of the art webpage, intense participant &amp; sponsor engagement and high entertainment in general. This checklist is not fully complete. Still it should allow you to arrange a conference with the main points covered. 4 - 5 months before the conference: Gather the team and set up regular meetings Take notes during meetings, for example like this Decide a date Decide on the size (multiple tracks, 2 days) Test and decide on a streaming platform Invite Keynote speakers Setup a web page 2 - 3 months before the conference: Open call for proposals Social media coverage, email ads Publish on social media reminders Contact sponsors, sync expectations Keynote announcement Close CFP and decide on talks/workshops 1 month before the conference: Increase meeting frequency Open registration Create schedule &amp; sync with speakers Set up broadcasts, background, links Publish schedule Set up participant engagement (give away, Slack) Publish on social media reminders 2 weeks before the conference: Volunteer On-boarding Calendar reminders during conference in Slack Speakers Rehearsals Publish on social media reminders 1 week before the conference: Prepare opening, closing and moderation Close Registration Prepare social media coverage during the conference Publish on social media reminders Design and prepare preliminary feedback form Clarify team communication and responsibilities Conference day: Go live Have fun Create conversation/initiate engagement on Slack etc. Ask for feedback Debrief and celebrate</summary></entry><entry><title type="html">More Talking, More Doing!</title><link href="http://localhost:4000/posts/meetup/talk/2020/11/01/more-talking.html" rel="alternate" type="text/html" title="More Talking, More Doing!" /><published>2020-11-01T17:21:49+01:00</published><updated>2020-11-01T17:21:49+01:00</updated><id>http://localhost:4000/posts/meetup/talk/2020/11/01/more-talking</id><content type="html" xml:base="http://localhost:4000/posts/meetup/talk/2020/11/01/more-talking.html">&lt;h2&gt;Talk first, do more.&lt;/h2&gt;
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Conferences in Times of Corona The disruption in the event industry this year did also hit our organizing team at PyCon Sweden 2020 . Last year we arranged our biggest conference until then. A two day conference with 3 keynotes, 17 talks, 4 workshops and 2 panel discussions at a venue in the heart of Stockholm. For 2020 we had similar plans and then in March everything changed. Since the conference is usually planned for the fall, we had some buffer to decide if we even want to consider an on-site conference. We quickly decided against it and to go fully online instead. This didn't reduce the planning and we had new points to consider opening our registration up to the world. With a lot of energy and will we extended PyCon Sweden 2020 and arranged a 2 day conference with multiple tracks, 4 keynotes, 35 talks, 4 workshops and 2 panel discussions! Here is a checklist of things we had to do to arrange a conference of this format. One can invest more time in many of those points, like extended marketing, a remarkable state of the art webpage, intense participant &amp; sponsor engagement and high entertainment in general. This checklist is not fully complete. Still it should allow you to arrange a conference with the main points covered. 4 - 5 months before the conference: Gather the team and set up regular meetings Take notes during meetings, for example like this Decide a date Decide on the size (multiple tracks, 2 days) Test and decide on a streaming platform Invite Keynote speakers Setup a web page 2 - 3 months before the conference: Open call for proposals Social media coverage, email ads Publish on social media reminders Contact sponsors, sync expectations Keynote announcement Close CFP and decide on talks/workshops 1 month before the conference: Increase meeting frequency Open registration Create schedule &amp; sync with speakers Set up broadcasts, background, links Publish schedule Set up participant engagement (give away, Slack) Publish on social media reminders 2 weeks before the conference: Volunteer On-boarding Calendar reminders during conference in Slack Speakers Rehearsals Publish on social media reminders 1 week before the conference: Prepare opening, closing and moderation Close Registration Prepare social media coverage during the conference Publish on social media reminders Design and prepare preliminary feedback form Clarify team communication and responsibilities Conference day: Go live Have fun Create conversation/initiate engagement on Slack etc. Ask for feedback Debrief and celebrate</summary></entry><entry><title type="html">An ice cube about how I became a PyLady?</title><link href="http://localhost:4000/posts/inspiration/pyladies/2020/11/01/becoming-a-pylady.html" rel="alternate" type="text/html" title="An ice cube about how I became a PyLady?" /><published>2020-11-01T17:00:00+01:00</published><updated>2020-11-01T17:00:00+01:00</updated><id>http://localhost:4000/posts/inspiration/pyladies/2020/11/01/becoming-a-pylady</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/pyladies/2020/11/01/becoming-a-pylady.html">&lt;h2&gt;Stepping into the Python community&lt;/h2&gt;
 &lt;p&gt;
-    In spring in 2019, I hold my first public presentation at PyLadies
-    Sthlm that became a rolling snowball for the rest of 2019.
-    &lt;br&gt;
-    After the event the meetup organizer asked me, if I would be interested
-    in organising future events of PyLadies Sthlm. That sounded fun and
-    like a unique chance to meet new people and learn about different
-    topics from the Python world. I had no idea how to organize a
-    meetup, but a rough plan and some input from other PyLadies.
-    &lt;br&gt;
-    We needed one or two speakers, a place, a time and a number of
-    participants. That was easy to fix, my colleague + one PyLady
-    organizer would give a talk, they had time the same day in August,
-    I got the rooms and food sponsored from my workplace and 30 people
-    could join.
-    &lt;br&gt;
-    Perfect! All set, people were happy with the event and
-    I as well. All in all a great success!
-&lt;/p&gt;
-
-&lt;h2&gt;Level up!&lt;/h2&gt;
-&lt;p&gt;
-    In the week after that event the chair woman of PyCon Sweden
-    reached out to me for a collaboration of PyLadies Sthlm and PyCon Sweden.
-    PyCon Sweden arranges the annual Python conference
-    in Sweden, usually in Stockholm. Wow, that came quite unexpected. I just
-    started to understand how to arrange a two-hour meetup, but arranging
-    a two-day conference was a completely different league. The team had
-    already prepared a lot and established a structured
-    way to get things done.
-    &lt;br&gt;
-    My responsibilities were arranging two panel discussions,
-    interview our keynotes and update the social media channels during the conference.
-    I never done any of these things before... Especially during the panel
-    I had to face my biggest fear, be spontaneous. I like being prepared and
-    thanks to the internet and Wiki-How I got a lot info and confidence on the way.
-    In the end it became a great experience. &lt;br&gt;
-    This year I am in the organising team again and responsible of keynotes, moderation of their talks and
-    communication via social media, which is an area I explore for some time already.
-&lt;/p&gt;
-
-&lt;h2&gt;What you can learn from organizing events?&lt;/h2&gt;
-
-&lt;h3&gt;Expertise&lt;/h3&gt;
-&lt;p&gt;
-    This is by far the most obvious point, still by dedicating your time to prepare a presentation of a topic
-    you take ownership of your own learning. Spending time to understand and being able to formulate a concept
-    in you own words is a great way of learning. If you are not an expert in a certain area yet, it is a good idea to
-    start gathering material for a beginners course and extend the content as your own knowledge grows. Holding a presentation
-    doesn't mean that you have to be able to answer EVERY question you get from the audience.
-    It is completely fine to say, sorry I am not sure, I will come back to you about. Then look it up and again, you learned
-    something new.
-    &lt;br&gt;
-    If you have nothing that you want to present yourself, you can still arrange an event and see if there are
-    other people that want to present their topic. Support them as much as you can and ask them questions and I bet they
-    will be happy to explain you more details.
-&lt;/p&gt;
-
-&lt;h3&gt;Personality boost&lt;/h3&gt;
-&lt;p&gt;
-    Being the organizer definitely helps to build self-confidence by caring
-    responsibility. Responsibility is scary, but it's that challenge that
-    can enable growth. You have to take decisions and actions to ensure
-    that your speakers and hosts get the best support to make the event
-    a success. You also have to answer a couple of questions, where you have to take decisions yourself.
-&lt;/p&gt;
-
-&lt;h3&gt;Relationships &amp; Network&lt;/h3&gt;
-&lt;p&gt;
-    You can build great relations, with speakers, hosts, attendees and
-    sponsors.
+In spring 2019 I was ready for change. I was tired of learning alone after spending way too much time
+    participating online courses about data, visualisation and machine learning. It was time to step out
+    and pick up a challenge. At my workplace we had Lunch &amp; Learn now and then, an occasion where everybody
+    who wanted could present a topic, while the rest were eating their wrap or salad. I presented an introduction
+    to machine learning (ML) with a decision tree example. ML was and is still one of my major interest but I
+    didn’t use it in my actual work as a software programmer.&lt;br&gt;
+    The presentation went very well and I received a lot of feedback and tips what to explore next. It even lead
+    through an internal project where we were using an ML algorithm for data classification, that I was leading.
 &lt;/p&gt;
 &lt;p&gt;
-    The hardest part for me at meetups and conferences at the beginning was to start a
-    conversation with random strangers. If you are an organizer people come
-    to you instead to say &quot;Hi&quot; and share ideas. Especially at PyCon Sweden where
-    the organizers were wearing a pink shirt to stick out of the crowd.
-    I have to say that over time I even started to enjoy mingling!
+Before my talk I joined PyLadies, a non-binary mentorship group for Python programmers and thought I could give a
+    similar presentation there. I reached out to Éléonore who was organising events regularly to know if this would
+    be a topic of interest. I had recently joined PyLadies and really liked the atmosphere of respect, curiosity
+    and allowing members to try things out.
+After the presentation the Éléonore asked me if I wanted to arrange similar events in the future and without
+    thinking I answered “Yes sure, why not?!&quot;. I didn’t know how to do that and what that means. However I had
+    a lot of trust that I would get the support that I needed.
 &lt;/p&gt;
 &lt;p&gt;
-    I can really recommend everybody to get active in your local
-    community. Go to meetups and conferences and support the people
-    daring to step on stage. Study how they hold presentations and
-    prepare one yourself for a local meetup of group that you trust.
+Easy as that, suddenly I was in. And since then I organised events and had the goal to meet at least once a month.
+    During events I got asked by speakers that wanted to present and contacted companies that were interested in
+    hosting those kind of events, so there was always an event up in the pipeline. I got very glad when there were
+    new PyLadies joining the organising team, so that we can do more in the future.
+Through my work with PyLadies I also got in contact with PyCon Sweden, a non-profit organisation arranging an
+    annual conference for the Python community in Sweden. The organiser team has a very welcoming group culture,
+    where people decide which tasks and responsibilities they want to take over. Members get a lot of trust and
+    freedom in doing their tasks. This year I joined for the second time and I was picking up new tasks and took
+    more ownership, which makes me feel even more involved in the local Python community.
 &lt;/p&gt;
 &lt;p&gt;
-    There is so much we can learn from each other, that is not possible
-    to acquire from online courses or programming only. The interaction
-    with people face to face gives the opportunity to ask more questions
-    and understand peoples thoughts, experiences and opinions in a much
-    more engaging way. And who knows maybe you make some friends too...
+With the pandemic situations limiting the options to meet up most events have moved online. Since we don’t have the
+    natural way of meeting and chatting at PyLadies I am now reaching out to persons that I know have something
+    interesting to present.
+To adapt to that new situation and continue organising the events and keep the atmosphere of learning and exploring
+    I explored with the concept of the “PyLadies Online Mingle” where we can talk about ideas, tech and whatever
+    comes in mind. At one of those events I found one brave member alias magicandcode who wanted to give a talk and
+    Alexandra who is currently organising a study group for data analysis in Python.
+So I have high hopes that we will continue with interesting and engaging events online at least until we are able
+    to run face-to-face events again.
 &lt;/p&gt;
 &lt;p&gt;
-    All the best,
-    &lt;br&gt;
-    Christine
-&lt;/p&gt;</content><author><name></name></author><summary type="html">Talk first, do more. In spring in 2019, I hold my first public presentation at PyLadies Sthlm that became a rolling snowball for the rest of 2019. After the event the meetup organizer asked me, if I would be interested in organising future events of PyLadies Sthlm. That sounded fun and like a unique chance to meet new people and learn about different topics from the Python world. I had no idea how to organize a meetup, but a rough plan and some input from other PyLadies. We needed one or two speakers, a place, a time and a number of participants. That was easy to fix, my colleague + one PyLady organizer would give a talk, they had time the same day in August, I got the rooms and food sponsored from my workplace and 30 people could join. Perfect! All set, people were happy with the event and I as well. All in all a great success!</summary></entry><entry><title type="html">An Ice Cube about Slow Multitasking</title><link href="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html" rel="alternate" type="text/html" title="An Ice Cube about Slow Multitasking" /><published>2020-10-20T19:00:00+02:00</published><updated>2020-10-20T19:00:00+02:00</updated><id>http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html">&lt;h2&gt;An Ice Cube about Slow Multitasking&lt;/h2&gt;
+If you want to give a presentation at PyLadies Stockholm, feel free to reach out to me.
+&lt;/p&gt;
+&lt;p&gt;
+All the best,
+Christine
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Stepping into the Python community In spring 2019 I was ready for change. I was tired of learning alone after spending way too much time participating online courses about data, visualisation and machine learning. It was time to step out and pick up a challenge. At my workplace we had Lunch &amp; Learn now and then, an occasion where everybody who wanted could present a topic, while the rest were eating their wrap or salad. I presented an introduction to machine learning (ML) with a decision tree example. ML was and is still one of my major interest but I didn’t use it in my actual work as a software programmer. The presentation went very well and I received a lot of feedback and tips what to explore next. It even lead through an internal project where we were using an ML algorithm for data classification, that I was leading. Before my talk I joined PyLadies, a non-binary mentorship group for Python programmers and thought I could give a similar presentation there. I reached out to Éléonore who was organising events regularly to know if this would be a topic of interest. I had recently joined PyLadies and really liked the atmosphere of respect, curiosity and allowing members to try things out. After the presentation the Éléonore asked me if I wanted to arrange similar events in the future and without thinking I answered “Yes sure, why not?!&quot;. I didn’t know how to do that and what that means. However I had a lot of trust that I would get the support that I needed. Easy as that, suddenly I was in. And since then I organised events and had the goal to meet at least once a month. During events I got asked by speakers that wanted to present and contacted companies that were interested in hosting those kind of events, so there was always an event up in the pipeline. I got very glad when there were new PyLadies joining the organising team, so that we can do more in the future. Through my work with PyLadies I also got in contact with PyCon Sweden, a non-profit organisation arranging an annual conference for the Python community in Sweden. The organiser team has a very welcoming group culture, where people decide which tasks and responsibilities they want to take over. Members get a lot of trust and freedom in doing their tasks. This year I joined for the second time and I was picking up new tasks and took more ownership, which makes me feel even more involved in the local Python community. With the pandemic situations limiting the options to meet up most events have moved online. Since we don’t have the natural way of meeting and chatting at PyLadies I am now reaching out to persons that I know have something interesting to present. To adapt to that new situation and continue organising the events and keep the atmosphere of learning and exploring I explored with the concept of the “PyLadies Online Mingle” where we can talk about ideas, tech and whatever comes in mind. At one of those events I found one brave member alias magicandcode who wanted to give a talk and Alexandra who is currently organising a study group for data analysis in Python. So I have high hopes that we will continue with interesting and engaging events online at least until we are able to run face-to-face events again. If you want to give a presentation at PyLadies Stockholm, feel free to reach out to me. All the best, Christine</summary></entry><entry><title type="html">An Ice Cube about Slow Multitasking</title><link href="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html" rel="alternate" type="text/html" title="An Ice Cube about Slow Multitasking" /><published>2020-10-20T19:00:00+02:00</published><updated>2020-10-20T19:00:00+02:00</updated><id>http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/mindset/2020/10/20/inspiration-slowmultitasking.html">&lt;h2&gt;An Ice Cube about Slow Multitasking&lt;/h2&gt;
 &lt;p&gt;
     Recently I discovered a
     &lt;a href=&quot;https://www.ted.com/talks/tim_harford_a_powerful_way_to_unleash_your_natural_creativity/transcript&quot;&gt;
