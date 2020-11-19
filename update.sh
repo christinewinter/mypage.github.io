@@ -1,3 +1,4 @@
+rm -r posts
 cd ice_cubes
 bundle exec jekyll  serve &
 npm_pid=$!
