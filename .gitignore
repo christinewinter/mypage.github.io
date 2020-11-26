@@ -1,3 +1,4 @@
-_site
+ice_cubes/_site
 .sass-cache
 .jekyll-metadata
+.idea/*
