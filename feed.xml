@@ -1,4 +1,441 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-05T10:51:11+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">An Ice Cube about The Culture Code and Software Teams</title><link href="http://localhost:4000/posts/inspiration/books/2021/01/05/book-review-culture-code.html" rel="alternate" type="text/html" title="An Ice Cube about The Culture Code and Software Teams" /><published>2021-01-05T09:03:30+01:00</published><updated>2021-01-05T09:03:30+01:00</updated><id>http://localhost:4000/posts/inspiration/books/2021/01/05/book-review-culture-code</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/books/2021/01/05/book-review-culture-code.html">&lt;h2&gt;Book Review The Culture Code from Daniel Coyle and Reflection for Software Teams&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-17T11:10:39+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ice Cubes</title><subtitle>A Winter Blog</subtitle><entry><title type="html">An Ice Cube about Syntax Gotchas writing PySpark when knowing Pandas</title><link href="http://localhost:4000/python/learning/2021/03/30/pyspark-syntax-gotchas.html" rel="alternate" type="text/html" title="An Ice Cube about Syntax Gotchas writing PySpark when knowing Pandas" /><published>2021-03-30T10:03:30+02:00</published><updated>2021-03-30T10:03:30+02:00</updated><id>http://localhost:4000/python/learning/2021/03/30/pyspark-syntax-gotchas</id><content type="html" xml:base="http://localhost:4000/python/learning/2021/03/30/pyspark-syntax-gotchas.html">&lt;h2&gt;Syntax Gotchas writing PySpark when knowing Pandas &lt;/h2&gt;
+&lt;p&gt;
+If you have some basic knowledge in data analysis with Python Pandas and are curious about PySpark and don't know where to start, tag along.&lt;/p&gt;
+&lt;p&gt;
+    &lt;a href=&quot;https://pandas.pydata.org/&quot; target=&quot;_blank&quot;&gt;
+    Python Pandas&lt;/a&gt; encouraged us to leave excel tables behind and to look at data from a coder perspective instead. Data sets became bigger
+    and bigger, turned from data bases to data files and into data lakes. Some smart minds from
+    &lt;a target=&quot;_blank&quot; href=&quot;http://spark.apache.org/&quot;&gt;
+    Apache&lt;/a&gt; blessed us with the Scala based
+    framework Spark to process the bigger amounts in a reasonable time. Since Python is the go to language for data science nowadays,
+    there was a Python API available soon that’s called
+    &lt;a href=&quot;https://spark.apache.org/docs/latest/api/python/index.html&quot; target=&quot;_blank&quot;&gt; PySpark&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+For a while now I am trying to conquer this Spark interface with its non-pythonic syntax that everybody in the big data world praises.
+    It took me a few attempts and it’s still work in progress. However in this post I want to show you, who is also starting learning PySpark,
+    how to replicate the same analysis you would otherwise do with Pandas.&lt;/p&gt;
+&lt;p&gt;
+The data analysis example we are going to look at you can find in the book
+    &lt;a target=&quot;_blank&quot; href=&quot;https://wesmckinney.com/pages/book.html&quot;&gt;
+    &quot;Python for Data Analysis&quot;&lt;/a&gt; by Wes McKinney.
+    In that analysis, the aim is to find out the top ranked movies from the MovieLens 1M data set, which is
+    acquired and maintained by the
+    &lt;a href=&quot;https://grouplens.org/&quot; target=&quot;_blank&quot;&gt;
+    GroupLens&lt;/a&gt; Research project from the University of Minnesota.&lt;/p&gt;
+&lt;p&gt;
+    As a coding framework I used
+    &lt;a href=&quot;https://www.kaggle.com/&quot; target=&quot;_blank&quot;&gt;
+    Kaggle&lt;/a&gt;, since it comes with the convenience of notebooks that have the basic data science modules installed and are ready to go with two clicks.
+&lt;/p&gt;
+&lt;p&gt;
+   The complete analysis and the Pyspark code you can also find in
+    &lt;a href=&quot;https://www.kaggle.com/christine12/movielens-1m-dataset-pyspark&quot; target=&quot;_blank&quot;&gt;
+        &lt;b&gt;this Kaggle notebook&lt;/b&gt;&lt;/a&gt; and the Pandas code in
+    &lt;a href=&quot;https://www.kaggle.com/christine12/movielens-1m-dataset-python-pandas&quot; target=&quot;_blank&quot;&gt;
+        &lt;b&gt;this one&lt;/b&gt;&lt;/a&gt;. We won’t replicate the same analysis here, but instead focus on the syntax differences when
+    handling Pandas and Pyspark dataframes. I will always show the Pandas code first following with the PySpark equivalent.
+&lt;/p&gt;
+&lt;p&gt;
+The basic functions that we need for this analysis are:
+&lt;ul&gt;
+    &lt;li&gt;Loading data from csv format&lt;/li&gt;
+    &lt;li&gt;Combining datasets from different tables&lt;/li&gt;
+    &lt;li&gt;Extracting information&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Loading data&lt;/h4&gt;
+
+&lt;p&gt;
+Pandas has different
+    &lt;a href=&quot;https://pandas.pydata.org/docs/reference/io.html&quot; target=&quot;_blank&quot;&gt;
+    read functions&lt;/a&gt;, which make it easy to import data depending on the file type the data is stored in.
+&lt;pre&gt;&lt;code&gt;
+# Pandas
+pd.read_table(path_to_file, sep='::', header=None, names=column_names, engine='python')
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    With PySpark we first need to create a
+    &lt;a href=&quot;https://spark.apache.org/docs/latest/sql-getting-started.html&quot; target=&quot;_blank&quot;&gt;
+    Spark Context&lt;/a&gt; as the entry point to Sparks functionality. Not that the indentation might not match when you copy-paste this into your code.
+&lt;pre&gt;&lt;code&gt;
+# PySpark
+from pyspark.sql import SparkSession
+spark = SparkSession.Builder().getOrCreate() #--&gt; Spark Context
+spark.read                        #--&gt; what do you want to do
+    .format(&quot;csv&quot;)                #--&gt; which format is the file
+    .option(&quot;delimiter&quot;, &quot;::&quot;)    #--&gt; specify delimiter that's used
+    .option(&quot;inferSchema&quot;, &quot;true&quot;)#--&gt; default value type is string
+    .load(path_to_file)            #--&gt; file path
+&lt;/code&gt; &lt;/pre&gt;
+&lt;/p&gt;
+&lt;h4&gt;Combining Datasets&lt;/h4&gt;
+
+&lt;p&gt;
+The default function for combining datasets in Pandas is
+    &lt;a href=&quot;https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;merge()&lt;/b&gt;&lt;/a&gt;,
+    which combines datasets on one or
+    multiple columns. Even Pandas &lt;b&gt;join()&lt;/b&gt; function uses merge with an index column under the hood. Ratings, users and movies are in this code snippet Pandas datframes that share respective columns, so we can just call the merge function. In the case of name mismatch, we would need to use the join() instead.
+&lt;pre&gt;&lt;code&gt;
+# Pandas
+data = pd.merge(pd.merge(ratings, users), movies)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+In PySpark there is no merge function, the default here is join() on a selection of columns. Otherwise it looks fairly similar.
+&lt;pre&gt;&lt;code&gt;
+# PySpark
+data = ratings.join(users, [&quot;user_id&quot;]).join(movies, [&quot;movie_id&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;h4&gt;Extracting Information&lt;/h4&gt;
+
+&lt;p&gt;
+Now that we have our data in the form that we can work with we can take a look how to actually extract the content.
+&lt;/p&gt;
+&lt;h5&gt;Show row entries&lt;/h5&gt;
+&lt;p&gt;
+Pandas dataframes derive from numpy arrays and thereby elements can be accessed by using square backets. If we want to
+    see the first 5 elements of a table we would do it in this way:
+&lt;pre&gt;&lt;code&gt;
+# Pandas
+users[:5]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+In Spark dataframes are objects and therefore we need to use functions.
+    In the case if showing the first 5 rows we can use &lt;b&gt;show()&lt;/b&gt; which derives from the underlying SQL syntax
+    used by Spark dataframes. The function show is just a way to represent the dataset, if you would like to create a
+    new dataframe from a selection of entries, you would need to use &lt;b&gt;take()&lt;/b&gt;.
+&lt;pre&gt;&lt;code&gt;
+# PySpark
+users.show(5) # --&gt; print result
+users.take(5) # --&gt; list of Row() objects
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;h5&gt;Filtering&lt;/h5&gt;
+&lt;p&gt;
+In pandas, we can filter in different ways. One of the functions we can use is &lt;b&gt;loc&lt;/b&gt; which is a label based filter to access rows or columns. In the data analysis example, we want to filter all rows in a dataframe that occur in a list of titles.
+&lt;pre&gt;&lt;code&gt;
+# Pandas
+mean_ratings = mean_ratings.loc[active_titles]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;
+PySpark dataframes don’t support &lt;b&gt;loc&lt;/b&gt;, so instead we need to use the filter function.
+    An easy way to handle columns in PySpark dataframes is the &lt;b&gt;col()&lt;/b&gt; function.
+    Calling that one with the column name, will return the respective column from the dataframe.
+&lt;pre&gt;&lt;code&gt;
+# PySpark
+from pyspark.sql.functions import col
+mean_ratings = mean_ratings.filter(col('title').isin(active_titles))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;h5&gt;Grouping&lt;/h5&gt;
+&lt;p&gt;
+Grouping looks very similar in Pandas and PySpark with &lt;b&gt;groupby()&lt;/b&gt;. Pandas dataframes have a lot of
+    &lt;a href=&quot;https://pandas.pydata.org/docs/reference/groupby.html&quot; target=&quot;_blank&quot;&gt;
+    aggregating functions&lt;/a&gt; implemented for their group-by objects, like median, mean, sum, variance etc.
+    For Pyspark dataframes, it is necessary to import them, for example from pyspark.sql.functions, like
+    the &lt;b&gt;mean()&lt;/b&gt; and standard dev &lt;b&gt;stddev()&lt;/b&gt;.
+&lt;pre&gt;&lt;code&gt;
+# Pandas
+ratings_by_title = data.groupby('title')['rating'].std()
+# PySpark
+from pyspark.sql.functions import mean, stddev
+coldata_sdf.groupBy('title').agg(stddev(col('rating')).alias('std'))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;h5&gt;Pivot Table&lt;/h5&gt;
+&lt;p&gt;
+Pivot tables are commonly used in data analysis. Pandas dataframes arrange and aggregate all in one function
+    &lt;a href=&quot;https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html&quot; target=&quot;_blank&quot;&gt;
+        &lt;b&gt;pivot_table&lt;/b&gt;&lt;/a&gt;.
+&lt;pre&gt;&lt;code&gt;
+# Pandas
+mean_ratings = data.pivot_table('rating',
+                                index='title',
+                                columns='gender',
+                                aggfunc='mean')
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;
+To replicate the same outcome with Pyspark dataframes, we need to concatenate the grouping, pivot and aggregation functions.
+&lt;pre&gt;&lt;code&gt;
+# PySpark
+mean_ratings_pivot = data
+                       .groupBy('title')
+                       .pivot('gender')
+                       .agg(mean('rating'))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;h5&gt;Sorting&lt;/h5&gt;
+&lt;p&gt;
+To sort the values in a column in ascending or descending order we can call the &lt;b&gt;sort_values()&lt;/b&gt; function for
+    Pandas dataframes. Remember that the default sorting order is ascending.
+&lt;pre&gt;&lt;code&gt;
+# Pandas
+top_female_ratings = mean_ratings.sort_values(by='F',
+                                              ascending=False)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    In PySpark there is a similar function called &lt;b&gt;sort()&lt;/b&gt;, but the column that we want to sort, we have to give
+    as an input. Similarly we could use the function &lt;b&gt;orderBy()&lt;/b&gt; and would receive the same result.
+&lt;pre&gt;&lt;code&gt;
+# PySpark
+top_female_ratings = mean_ratings.sort(mean_ratings.F.desc())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    Over time the syntax of Pandas and PySpark will change. Maybe we are lucky and they will become more pythonic.
+    There are also modules that combine provide and a Pandas API for PySpark, which is called
+    &lt;a href=&quot;https://koalas.readthedocs.io/en/latest/&quot; target=&quot;_blank&quot;&gt;
+        Koalas&lt;/a&gt;.
+    If its performance can compete with PySpark, we might see more of this in the future.
+&lt;/p&gt;
+
+&lt;p&gt;
+    I hope you found some helpful tips and please let me know your insights from learning Spark, both syntax and functionality!
+&lt;/p&gt;
+
+&lt;p&gt;
+    All the best,
+    &lt;br&gt;
+    Christine
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Syntax Gotchas writing PySpark when knowing Pandas If you have some basic knowledge in data analysis with Python Pandas and are curious about PySpark and don't know where to start, tag along. Python Pandas encouraged us to leave excel tables behind and to look at data from a coder perspective instead. Data sets became bigger and bigger, turned from data bases to data files and into data lakes. Some smart minds from Apache blessed us with the Scala based framework Spark to process the bigger amounts in a reasonable time. Since Python is the go to language for data science nowadays, there was a Python API available soon that’s called PySpark. For a while now I am trying to conquer this Spark interface with its non-pythonic syntax that everybody in the big data world praises. It took me a few attempts and it’s still work in progress. However in this post I want to show you, who is also starting learning PySpark, how to replicate the same analysis you would otherwise do with Pandas. The data analysis example we are going to look at you can find in the book &quot;Python for Data Analysis&quot; by Wes McKinney. In that analysis, the aim is to find out the top ranked movies from the MovieLens 1M data set, which is acquired and maintained by the GroupLens Research project from the University of Minnesota. As a coding framework I used Kaggle, since it comes with the convenience of notebooks that have the basic data science modules installed and are ready to go with two clicks. The complete analysis and the Pyspark code you can also find in this Kaggle notebook and the Pandas code in this one. We won’t replicate the same analysis here, but instead focus on the syntax differences when handling Pandas and Pyspark dataframes. I will always show the Pandas code first following with the PySpark equivalent. The basic functions that we need for this analysis are: Loading data from csv format Combining datasets from different tables Extracting information</summary></entry><entry><title type="html">An Ice Cube about Getting started</title><link href="http://localhost:4000/posts/inspiration/mindset/2021/03/01/just-a-wholeday.html" rel="alternate" type="text/html" title="An Ice Cube about Getting started" /><published>2021-03-01T09:03:30+01:00</published><updated>2021-03-01T09:03:30+01:00</updated><id>http://localhost:4000/posts/inspiration/mindset/2021/03/01/just-a-wholeday</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/mindset/2021/03/01/just-a-wholeday.html">&lt;h2&gt;If I just had a whole day . . . &lt;/h2&gt;
+&lt;p&gt;
+How often were you thinking about trying out a new hobby or picking up an old one, but it seems like there is never really enough time to actually do it?
+&lt;/p&gt;
+&lt;p&gt;
+    I love trying out new crafts and sports mostly just out of curiosity. In that way I got into all kinds of stuff sewing, knitting, piano &amp; guitar playing, sailing, photography, rugby, pen-plotting, contributing to a local meet-up group and even blogging.
+    I don't want to brag here, I am not good at any of those in particular. What I want to achieve is to learn the basic concepts and to pursue those further that I find exciting.
+&lt;/p&gt;
+&lt;p&gt;
+    Sometimes when I shared my joy about exploring new things I got a frustrating response from colleagues, friends or family members: &quot;I would like try that too, but I need to get a whole day to really get into it. Otherwise, it's not worth it.&quot;
+&lt;/p&gt;
+&lt;p&gt;
+    This statement always made me sad, because with that view on life there will never be that time or at least not anytime soon. There is life happening around us and most of us just don't have the luxury of empty weekends or taking a day off.
+&lt;/p&gt;
+&lt;p&gt;
+    So will that mean, that there is never time to do what you actually want to try out?
+&lt;/p&gt;
+&lt;p&gt;
+    For me life is all about trying out new things and that's why I want to share with you three simple tips that work for me to get started.
+&lt;/p&gt;
+&lt;p&gt;
+    Disclaimer here, this is post is not about starting a new hobbies and mastering them. For more information about that I kindly refer you to Angela Duckworth's
+    &lt;a href=&quot;https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance?nolanguage=en%EF%BB%BF&quot; target=&quot;_blank&quot;&gt;
+    TED Talk&lt;/a&gt; or her
+    &lt;a href=&quot;https://www.econtalk.org/angela-duckworth-on-grit/&quot; target=&quot;_blank&quot;&gt;
+    conversation on EconTalks&lt;/a&gt; with Ross Roberts. She found out that there is a relation of talent, effort and skill.
+    With an initial talent we need less effort to learn a certain skill, but if we put a lot of effort into learning,
+    talent can be outperformed. The motivation to go the extra mile and put effort into improvement she describes as grit,
+    the combination of passion and perseverance, the will to push forward to become better.
+&lt;/p&gt;
+In this blog post we don't want to get better, we want to get started. That means it's all about lowering the threshold
+and jump over the hurdles in own head that state reasons why we cannot do it.
+&lt;/p&gt;
+&lt;h5&gt;My three tips that I encourage you to try out are:&lt;/h5&gt;
+&lt;ul&gt;
+    &lt;li&gt;Allocate smaller chunks of time, instead of one big chunk.&lt;/li&gt;
+    &lt;li&gt;Set a small realistic goal.&lt;/li&gt;
+    &lt;li&gt;Define a reward.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Allocate smaller chunks of time, instead of one big chunk.&lt;/h4&gt;
+
+&lt;p&gt;
+Learning is hard and learning under pressure is seldom resulting in a sustainable learning experience. Deadlines can be
+    an external motivation to push yourself forward but with overloading you brain's capacity concepts won't stick.
+&lt;/p&gt;
+&lt;p&gt;
+    Of course you can spend all this time on the one skill that you want to learn. How do you think this day will look like? And how do you think you would feel after that day?
+&lt;/p&gt;
+&lt;p&gt;
+    Learning is a time and energy consuming process. It doesn't happen instantly and the body doesn't always appreciate novelty. To make motivation sustainable one way is to split sessions up into smaller bit and finish them before they feel draining.
+&lt;/p&gt;
+&lt;p&gt;
+    Frustration and anger are good indicators that it's time for a break.
+&lt;/p&gt;
+&lt;p&gt;
+    Personally I found my sweet spot to trick my brain in to workout or activities with intense focus between 15–20min. If I feel like going on longer, great! If not, I started and let the brain digest.
+&lt;/p&gt;
+&lt;h4&gt;Set a small realistic goal or several milestones&lt;/h4&gt;
+&lt;p&gt;
+What is it that you want to be able to do or what is it that you want to achieve? Since you are starting learning a skill, goals should be small.
+    If you start to learn football with the objective to become league player I admire your ambitions. However, do you know that you actually like running after a ball yet?
+&lt;/p&gt;
+&lt;p&gt;
+    Small realistic goals in this case could be: I want to be able to kick the ball 5m in a certain direction. I want to be able to run 20m dribbling the ball.
+&lt;/p&gt;
+&lt;p&gt;
+    The number of goals are not limited, you can set them and check them off. The goal shouldn't be impressive, it should be foremost motivating. Reaching this goal should leave you with a feeling of accomplishment.
+&lt;/p&gt;
+&lt;h4&gt;    Reward yourself&lt;/h4&gt;
+&lt;p&gt;
+Learning is the reward! No, just kidding. In the short run, the view is narrow, so think about what you want to do,
+    if you spend a certain amount of time or energy on the skill that you want to learn. In the long run, learning is for sure the reward. You added a new tool into your toolbox and also learned how to learn.
+&lt;/p&gt;
+&lt;p&gt;
+    How you choose the reward is up to you. Take a walk, watch a series, play some games, depending on what you find rewarding. I personally like candy.
+&lt;/p&gt;
+&lt;p&gt;
+    You might have seen that the tips that I shared with you have a common theme. Start the first session with a low
+    time and energy threshold and finish with a nice experience. With that positive memory it will be easier to
+    start the next session another day. Once a routine is established we can talk about grit, challenges and pushing forward to develop skills further.
+&lt;/p&gt;
+&lt;p&gt;
+    I hope you feel encouraged to try out a new skill or activity that you always wanted to try out.
+&lt;/p&gt;
+&lt;p&gt;
+    Let me know how it goes! And please share your tips that you found valuable for learning.
+&lt;/p&gt;
+
+&lt;p&gt;
+    All the best,
+    &lt;br&gt;
+    Christine
+&lt;/p&gt;</content><author><name></name></author><summary type="html">If I just had a whole day . . . How often were you thinking about trying out a new hobby or picking up an old one, but it seems like there is never really enough time to actually do it? I love trying out new crafts and sports mostly just out of curiosity. In that way I got into all kinds of stuff sewing, knitting, piano &amp; guitar playing, sailing, photography, rugby, pen-plotting, contributing to a local meet-up group and even blogging. I don't want to brag here, I am not good at any of those in particular. What I want to achieve is to learn the basic concepts and to pursue those further that I find exciting. Sometimes when I shared my joy about exploring new things I got a frustrating response from colleagues, friends or family members: &quot;I would like try that too, but I need to get a whole day to really get into it. Otherwise, it's not worth it.&quot; This statement always made me sad, because with that view on life there will never be that time or at least not anytime soon. There is life happening around us and most of us just don't have the luxury of empty weekends or taking a day off. So will that mean, that there is never time to do what you actually want to try out? For me life is all about trying out new things and that's why I want to share with you three simple tips that work for me to get started. Disclaimer here, this is post is not about starting a new hobbies and mastering them. For more information about that I kindly refer you to Angela Duckworth's TED Talk or her conversation on EconTalks with Ross Roberts. She found out that there is a relation of talent, effort and skill. With an initial talent we need less effort to learn a certain skill, but if we put a lot of effort into learning, talent can be outperformed. The motivation to go the extra mile and put effort into improvement she describes as grit, the combination of passion and perseverance, the will to push forward to become better. In this blog post we don't want to get better, we want to get started. That means it's all about lowering the threshold and jump over the hurdles in own head that state reasons why we cannot do it. My three tips that I encourage you to try out are: Allocate smaller chunks of time, instead of one big chunk. Set a small realistic goal. Define a reward. Allocate smaller chunks of time, instead of one big chunk.</summary></entry><entry><title type="html">An Ice Cube about Resources to Learn Python</title><link href="http://localhost:4000/python/learning/2021/01/27/learning-python-programming.html" rel="alternate" type="text/html" title="An Ice Cube about Resources to Learn Python" /><published>2021-01-27T09:03:30+01:00</published><updated>2021-01-27T09:03:30+01:00</updated><id>http://localhost:4000/python/learning/2021/01/27/learning-python-programming</id><content type="html" xml:base="http://localhost:4000/python/learning/2021/01/27/learning-python-programming.html">&lt;h2&gt;Where to start when learning programming with Python&lt;/h2&gt;
+&lt;p&gt;
+    As usual, when starting looking for information when learning a new skill or about a new topic, it's difficult to
+    find relevant resources.
+&lt;/p&gt;
+&lt;p&gt;
+    Especially technical topics can feel intimidating to even start in the first place.
+&lt;/p&gt;
+&lt;p&gt;
+    Python wasn't the first programming language I learned, but it is by far my favorite. Python is volatile language
+    that can be used in many different topics you can dive into after understanding the basics, like math &amp; statistics
+    with Python, data processing, machine learning, web-programming and embedded programming. But before that, one has
+    to get started.
+&lt;/p&gt;
+&lt;p&gt;
+    As a Python ambassador I often get questions about where to find useful resources. In this post I won't explain
+    the details of Python, but rather want to point to resources that I found helpful to get started. Also this is a
+    living list, meaning that I keep the freedom to update and extend it from time to time.
+&lt;/p&gt;
+
+&lt;h4&gt;Getting started&lt;/h4&gt;
+&lt;p&gt;
+    If you never have written a line of code and approach Python as your first programming language, then you can have
+    a look at the following links. Please don't go through all of the tutorials and books. Choose one or two of them
+    depending on the format that you learn from best:
+&lt;/p&gt;
+
+&lt;h4&gt;Web pages:&lt;/h4&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.learnpython.org/&quot; target=&quot;_blank&quot;&gt;https://www.learnpython.org/&lt;/a&gt; &lt;br&gt;
+        An interactive web page, were you can get a grasp of the language and structure without any need to set something up.
+        It's great to just get started without struggling to find the right tools or installation files.
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.w3schools.com/python/python_intro.asp&quot; target=&quot;_blank&quot;&gt;
+            https://www.w3schools.com/python/python_intro.asp&lt;/a&gt; &lt;br&gt;
+        A more general introduction to the language, you can check out on W3School, which is the go to side of web
+        programming basics.
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Books (online):&lt;/h4&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.py4e.com/&quot; target=&quot;_blank&quot;&gt;https://www.py4e.com/&lt;/a&gt; &lt;br&gt;
+        All material for the book &quot;Python for Everybody&quot; by Dr. Charles R. Severance, with also a PDF version
+        available linked from that page &lt;br&gt;
+        &lt;a href=&quot;http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf&quot; target=&quot;_blank&quot;&gt;
+            http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf&lt;/a&gt; &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://greenteapress.com/wp/think-python-2e/&quot; target=&quot;_blank&quot;&gt;
+            https://greenteapress.com/wp/think-python-2e/&lt;/a&gt; &lt;br&gt;
+        &quot;Think Python&quot; by Allen B. Downey introducing programming and Python for beginners.
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h4&gt;Courses &amp; Tutorials:&lt;/h4&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://realpython.com/python-first-steps/&quot; target=&quot;_blank&quot;&gt;https://realpython.com/python-first-steps/ &lt;/a&gt; &lt;br&gt;
+        A lot of free tutorials and information available without a paid membership.
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.coursera.org/learn/python?specialization=python&quot; target=&quot;_blank&quot;&gt;
+            https://www.coursera.org/learn/python?specialization=python&lt;/a&gt; &lt;br&gt;
+        Respective course from the author &quot;Python for Everybody&quot; by Dr. Charles R. Severance on Coursera.
+        Choosing the certificate option might require payment.
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+    After writing some lines of code or maybe just a single one you will run into problems and that is a crucial
+    part of the learning process. Embrace your errors as a learning opportunity.
+&lt;/p&gt;
+
+&lt;h4&gt;Troubleshooting:&lt;/h4&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.stackoverflow.com&quot; target=&quot;_blank&quot;&gt;www.stackoverflow.com&lt;/a&gt; &lt;br&gt;
+        Maybe the largest forum for developers, where people share and discuss their code, architecture,
+        error messages, careers and more
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.fullstackpython.com/debugging.html&quot; target=&quot;_blank&quot;&gt;
+            https://www.fullstackpython.com/debugging.html
+        &lt;/a&gt; &lt;br&gt;
+        Learn how to debug and understand the tools
+    &lt;/li&gt;
+    &lt;li&gt;
+        Local Python communities like
+        &lt;a href=&quot;https://www.python.org/events/python-user-group/&quot; target=&quot;_blank&quot;&gt;https://www.python.org/events/python-user-group/&lt;/a&gt; &lt;br&gt;
+        and
+        &lt;a href=&quot;https://pyladies.com/locations/&quot; target=&quot;_blank&quot;&gt;https://pyladies.com/locations/&lt;/a&gt; &lt;br&gt;
+         to meet your peers, share and discuss
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+    Very few programmers are writing code with only an editor and command line. If you want to use a proper
+    IDE (integrated development environment) or avoid installing Python on your computer locally, have a look at
+    the following links. Again choose one and try it out for a bit, don't fall in the trap to get obsessed with tools.
+&lt;/p&gt;
+
+&lt;h4&gt;Writing code:&lt;/h4&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.jetbrains.com/pycharm/download/&quot; target=&quot;_blank&quot;&gt;https://www.jetbrains.com/pycharm/download/&lt;/a&gt; &lt;br&gt;
+        &lt;a href=&quot;https://visualstudio.microsoft.com/vs/community/&quot; target=&quot;_blank&quot;&gt;https://visualstudio.microsoft.com/vs/community/&lt;/a&gt; &lt;br&gt;
+        Most popular editors for Python PyCharm and Visual Studio
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://colab.research.google.com/notebooks/intro.ipynb&quot; target=&quot;_blank&quot;&gt;https://colab.research.google.com/notebooks/intro.ipynb&lt;/a&gt; &lt;br&gt;
+        With a google account you can code in the cloud without the need to install Python locally
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://mybinder.org/&quot; target=&quot;_blank&quot;&gt;https://mybinder.org/&lt;/a&gt; &lt;br&gt;
+        Interactive code with Jupyter notebooks in the browser (needs pre-existing code in form of a Github repository)
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+    I really hope you found a starting point for your learning journey and enjoy exploring the world of Python and programming in general.
+&lt;/p&gt;
+&lt;p&gt;
+    Happy learning and let me know how it goes!
+&lt;/p&gt;
+&lt;p&gt;
+    All the best,
+    &lt;br&gt;
+    Christine
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Where to start when learning programming with Python As usual, when starting looking for information when learning a new skill or about a new topic, it's difficult to find relevant resources. Especially technical topics can feel intimidating to even start in the first place. Python wasn't the first programming language I learned, but it is by far my favorite. Python is volatile language that can be used in many different topics you can dive into after understanding the basics, like math &amp; statistics with Python, data processing, machine learning, web-programming and embedded programming. But before that, one has to get started. As a Python ambassador I often get questions about where to find useful resources. In this post I won't explain the details of Python, but rather want to point to resources that I found helpful to get started. Also this is a living list, meaning that I keep the freedom to update and extend it from time to time.</summary></entry><entry><title type="html">An Ice Cube about The Culture Code and Software Teams</title><link href="http://localhost:4000/posts/inspiration/books/2021/01/05/book-review-culture-code.html" rel="alternate" type="text/html" title="An Ice Cube about The Culture Code and Software Teams" /><published>2021-01-05T09:03:30+01:00</published><updated>2021-01-05T09:03:30+01:00</updated><id>http://localhost:4000/posts/inspiration/books/2021/01/05/book-review-culture-code</id><content type="html" xml:base="http://localhost:4000/posts/inspiration/books/2021/01/05/book-review-culture-code.html">&lt;h2&gt;Book Review The Culture Code from Daniel Coyle and Reflection for Software Teams&lt;/h2&gt;
 &lt;p&gt;
     My goal for the last years have been to read at least one book per month. During my free time occupations I picked
     up more and more responsibility so that I felt the need to learn more about group dynamics and leadership. In the
@@ -51,7 +488,7 @@
     this, you can have a look on
     &lt;a href=&quot;https://en.wikipedia.org/wiki/Scrum_(software_development)&quot; target=&quot;_blank&quot;&gt;
         Wikipedia&lt;/a&gt; and the
-    &lt;a href=https://microsoft.github.io/code-with-engineering-playbook/agile-development/&quot; target=&quot;_blank&quot;&gt;
+    &lt;a href=&quot;https://microsoft.github.io/code-with-engineering-playbook/agile-development/&quot; target=&quot;_blank&quot;&gt;
         code-with-engineering-playbook&lt;/a&gt;
     from Microsoft.
 &lt;/p&gt;
