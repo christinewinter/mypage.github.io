@@ -7,7 +7,6 @@ url: "https://www.christinewinter.se" # the base hostname & protocol for your si
 github_username:  christinewinter
 
 # Build settings
-markdown: kramdown
 theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
