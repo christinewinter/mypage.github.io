@@ -7,10 +7,10 @@ gem install jekyll bundler
 Setup folder
 jekyll new ice_cubes
 
-cd icecubes
+cd ice_cubes
 
 Change theme
-replace theme to gem "jekyll-theme-clean-blog"
+in Gemfile replace theme to gem install "jekyll-theme-clean-blog"
 bundle install
 replace theme in _config.yml
 
